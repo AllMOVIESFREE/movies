@@ -42,23 +42,23 @@ MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '0'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-IS_VERIFY = is_enabled('IS_VERIFY', False)
+IS_VERIFY = is_enabled('IS_VERIFY', True)
 #---------------------------------------------------------------
-TUTORIAL = environ.get("TUTORIAL", "0")
-VERIFY_IMG = environ.get("VERIFY_IMG", "0")
-SHORTENER_API = environ.get("SHORTENER_API", "0")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", '0')
-SHORTENER_API2 = environ.get("SHORTENER_API2", "0")
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", '0')
-SHORTENER_API3 = environ.get("SHORTENER_API3", "0")
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", '0')
-TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "0"))
-THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "0"))
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/how_to_download_movies_ws/362")
+VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
+SHORTENER_API = environ.get("SHORTENER_API", "b94cfe33d707743b52c7b3e340196402ca2bb45c")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", 'shortxlinks.com')
+SHORTENER_API2 = environ.get("SHORTENER_API2", "b94cfe33d707743b52c7b3e340196402ca2bb45c")
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", 'shortxlinks.com')
+SHORTENER_API3 = environ.get("SHORTENER_API3", "b94cfe33d707743b52c7b3e340196402ca2bb45c")
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", 'shortxlinks.com')
+TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "14400"))
+THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "14400")
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 LANGUAGES = ["hindi", "english", "telugu", "tamil", "kannada", "malayalam", "bengali", "marathi", "gujarati", "punjabi"]
 QUALITIES = ["HdRip","web-dl" ,"bluray", "hdr", "fhd" , "240p", "360p", "480p", "540p", "720p", "960p", "1080p", "1440p", "2K", "2160p", "4k", "5K", "8K"]
-YEARS = [f'{i}' for i in range(2025 , 2002,-1 )]
+YEARS = [f'{i}' for i in range(2024 , 2002,-1 )]
 SEASONS = [f'season {i}'for i in range (1 , 23)]
 REF_PREMIUM = 30
 PREMIUM_POINT = 1500
@@ -77,7 +77,7 @@ REACTIONS = ["👀", "😱", "🔥", "😍", "🎉", "🥰", "😇", "⚡"]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-FILE_AUTO_DEL_TIMER = int(environ.get('FILE_AUTO_DEL_TIMER', '600'))
+FILE_AUTO_DEL_TIMER = int(environ.get('FILE_AUTO_DEL_TIMER', '100'))
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
 IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', False)
 PORT = environ.get('PORT', '5000')
@@ -116,6 +116,17 @@ SETTINGS = {
             'auto_delete': AUTO_DELETE,
             'template': IMDB_TEMPLATE,
             'caption': FILE_CAPTION,
+            'tutorial': TUTORIAL,
+            'shortner': SHORTENER_WEBSITE,
+            'api': SHORTENER_API,
+            'shortner_two': SHORTENER_WEBSITE2,
+            'api_two': SHORTENER_API2,
             'log': LOG_VR_CHANNEL,
-            'IMDB': IMDB
+            'imdb': IMDB,
+            'link': LINK_MODE, 
+            'is_verify': IS_VERIFY, 
+            'verify_time': TWO_VERIFY_GAP,
+            'shortner_three': SHORTENER_WEBSITE3,
+            'api_three': SHORTENER_API3,
+            'third_verify_time': THREE_VERIFY_GAP
 }
