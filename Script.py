@@ -115,7 +115,7 @@ User - {}"""
 ⭐ Rating: {rating} / 10</b>
 """
 
-    FILE_CAPTION = """<b>{file_name}\n\n𝖩𝗈𝗂𝗇➥ 「<a href="https://t.me/premium_movies_webseries">𝙥𝙧𝙚𝙢𝙞𝙪𝙢 𝙢𝙤𝙫𝙞𝙚𝙨 𝙬𝙚𝙗𝙨𝙚𝙧𝙞𝙚𝙨</a>」</b>"""
+    FILE_CAPTION = """<b>{file_name}\n\n𝖩𝗈𝗂𝗇➥ 「<a href="https://t.me/premium_movies_webseries">PREMIUM</a>」</b>"""
     
 
     ALRT_TXT = """ᴊᴀʟᴅɪ ʏᴇʜᴀ sᴇ ʜᴀᴛᴏ !"""
